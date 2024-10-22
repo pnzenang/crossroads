@@ -48,7 +48,7 @@ export const forgotPassword = async (req, res) => {
   if (user) {
     const passwordToken = crypto.randomBytes(70).toString('hex');
     //send email
-    const origin = 'https://crossroads-55cr.onrender.com';
+    const origin = 'https://crossroads-11im.onrender.com';
     // const origin = 'https://www.mysagi.org';
 
     https: await sendResetPasswordEmail({
