@@ -55,8 +55,8 @@ export const forgotPassword = async (req, res) => {
   if (user) {
     const passwordToken = crypto.randomBytes(70).toString('hex');
     //send email
-    // const origin = 'http://localhost:5173';
-    const origin = 'https://crossroads-11im.onrender.com';
+    const origin = 'http://localhost:5173';
+    // const origin = 'https://crossroads-11im.onrender.com';
     // const origin = 'https://www.mysagi.org';
 
     https: await sendResetPasswordEmail({
@@ -81,8 +81,8 @@ export const forgotPassword = async (req, res) => {
     .json({ msg: 'Please check your email for reset password link' });
 };
 export const resetPassword = async (req, res) => {
-  const { token, userEmail, password } = req.body;
-  if (!token || !userEmail || !password) {
+  const { token, userEmail, userPassword } = req.body;
+  if (!token || !userEmail || !userPassword) {
     throw new BadRequestError('Please provide all values');
   }
   const user = await User.findOne({ userEmail });
@@ -93,9 +93,9 @@ export const resetPassword = async (req, res) => {
       user.passwordToken === hashString(token) &&
       user.passwordTokenExpirationDate > currentDate
     ) {
-      const hashedPassword = await hashPassword(req.body.password);
+      const hashedPassword = await hashPassword(req.body.userPassword);
       // req.body.password = hashedPassword;
-      user.password = hashedPassword;
+      user.userPassword = hashedPassword;
       user.passwordToken = null;
       user.passwordTokenExpirationDate = null;
       await user.save();

@@ -34,7 +34,7 @@ import { loader as editPackageLoader } from './pages/EditPackage';
 import { action as deletePackageAction } from './pages/DeletePackage';
 import { action as profileAction } from './pages/Profile';
 import { action as forgotAction } from './pages/ForgotPassword';
-// import { action as resetAction } from './pages/ResetPassword';
+import { action as resetAction } from './pages/ResetPassword';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -91,6 +91,7 @@ const router = createBrowserRouter([
     path: '/reset',
     element: <ResetPassword />,
     errorElement: <Error />,
+    action: resetAction,
   },
   {
     path: '/forgot',

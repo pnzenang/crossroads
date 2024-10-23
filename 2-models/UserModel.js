@@ -16,9 +16,17 @@ const UserSchema = new mongoose.Schema(
       enum: ['user', 'admin'],
       default: 'user',
     },
+    passwordToken: {
+      type: String,
+    },
+    passwordTokenExpirationDate: {
+      type: Date,
+    },
   },
+
   { timestamps: true }
 );
+
 UserSchema.methods.toJSON = function () {
   let obj = this.toObject();
   delete obj.userPassword;
