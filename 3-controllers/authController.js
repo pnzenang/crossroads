@@ -101,7 +101,7 @@ export const resetPassword = async (req, res) => {
       await user.save();
     }
   }
-  // res.send('reset password');
+  res.send('reset password');
 };
 
 export const logout = async (req, res) => {

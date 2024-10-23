@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Eye, EyeOff } from 'lucide-react';
 import { FormInputs, SubmitBtn, Logo } from '../components';
+import customFetch from '../utils/customFetch';
 import {
   Form,
   Link,
@@ -28,7 +29,6 @@ export const action = async ({ request }) => {
   try {
     await customFetch.post('/auth/resetPassword', data);
     toast.success('Password reset successfully, login');
-    console.log(data);
 
     return redirect('/login');
   } catch (error) {
