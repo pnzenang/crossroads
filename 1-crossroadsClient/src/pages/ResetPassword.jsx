@@ -19,9 +19,11 @@ export const action = async ({ request }) => {
   const formData = await request.formData();
   const { userPassword } = Object.fromEntries(formData);
   const data = { token, userEmail, userPassword };
-  console.log(userPassword);
-  console.log(token);
-  console.log(userEmail);
+  console.log(data);
+
+  // console.log(userPassword);
+  // console.log(token);
+  // console.log(userEmail);
 
   try {
     await customFetch.post('/auth/resetPassword', data);
