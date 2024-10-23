@@ -1,4 +1,4 @@
-import { FormInput, Logo, SubmitBtn } from '../components';
+import { FormInput, FormInputs, Logo, SubmitBtn } from '../components';
 import { Form, Link, redirect } from 'react-router-dom';
 import customFetch from '../utils/customFetch';
 import { toast } from 'react-toastify';
@@ -28,7 +28,7 @@ const ForgotPassword = () => {
         <h4 className='text-center text-3xl font-bold mt-4 capitalize'>
           forgot password
         </h4>
-        <FormInput type='email' label='email' name='email' />
+        <FormInputs type='email' label='email' name='userEmail' />
 
         <div className='mt-4'>
           <SubmitBtn text='send reset email' />

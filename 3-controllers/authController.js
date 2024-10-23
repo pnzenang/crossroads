@@ -1,9 +1,16 @@
 import { StatusCodes } from 'http-status-codes';
 import User from '../2-models/UserModel.js';
 import bcrypt from 'bcryptjs';
-import { hashPassword, comparePassword } from '../7-utils/passwordUtils.js';
+
+import {
+  hashPassword,
+  comparePassword,
+  hashString,
+} from '../7-utils/passwordUtils.js';
 import { UnauthenticatedError } from '../5-errors/customErrors.js';
 import { createJWT } from '../7-utils/tokenUtils.js';
+import crypto from 'crypto';
+import { sendResetPasswordEmail } from '../7-utils/sendResetPasswordEmail.js';
 
 export const register = async (req, res) => {
   const isFirstAccount = (await User.countDocuments()) === 0;
@@ -39,21 +46,22 @@ export const login = async (req, res) => {
 };
 
 export const forgotPassword = async (req, res) => {
-  const { email } = req.body;
-  if (!email) {
+  const { userEmail } = req.body;
+  if (!userEmail) {
     throw new BadRequestError('Please provide valid email');
   }
   // .select("+password")
-  const user = await User.findOne({ email });
+  const user = await User.findOne({ userEmail });
   if (user) {
     const passwordToken = crypto.randomBytes(70).toString('hex');
     //send email
+    // const origin = 'http://localhost:5173';
     const origin = 'https://crossroads-11im.onrender.com';
     // const origin = 'https://www.mysagi.org';
 
     https: await sendResetPasswordEmail({
-      name: `${user.firstName}  ${user.lastAndMiddleNames}`,
-      email: user.email,
+      name: `${user.userFirstName}  ${user.userMiddleAndLastName}`,
+      userEmail: user.userEmail,
       token: passwordToken,
       origin,
     });
@@ -73,11 +81,11 @@ export const forgotPassword = async (req, res) => {
     .json({ msg: 'Please check your email for reset password link' });
 };
 export const resetPassword = async (req, res) => {
-  const { token, email, password } = req.body;
-  if (!token || !email || !password) {
+  const { token, userEmail, password } = req.body;
+  if (!token || !userEmail || !password) {
     throw new BadRequestError('Please provide all values');
   }
-  const user = await User.findOne({ email });
+  const user = await User.findOne({ userEmail });
   if (user) {
     const currentDate = new Date();
 
