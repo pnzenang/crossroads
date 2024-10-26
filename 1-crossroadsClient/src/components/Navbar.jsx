@@ -87,7 +87,7 @@ const Navbar = () => {
                   <div className=' sm:flex justify-end hidden'>
                     <Link
                       to='/Login'
-                      className='inline-block whitespace-nowrap rounded-md border border-primary px-7 py-3 text-base font-medium text-primary transition hover:bg-primary hover:text-white '
+                      className='inline-block whitespace-nowrap rounded-md border border-primary px-7 py-3 text-base font-medium text-primary transition sm:hover:bg-primary hover:text-white '
                     >
                       Sign In
                     </Link>
@@ -119,7 +119,8 @@ const ListItem = ({ children, NavLink }) => {
     <li>
       <Link
         to={NavLink}
-        className='flex py-4 font-medium text-base-content hover:text-primary lg:mx-3 lg:inline-flex lg:py-6'
+        className='flex p-4 font-medium text-base-content hover:text-white lg:mx-3 lg:inline-flex lg:py-3 hover:bg-primary rounded-lg'
+        onClick={() => setOpen(!open)}
       >
         {children}
       </Link>

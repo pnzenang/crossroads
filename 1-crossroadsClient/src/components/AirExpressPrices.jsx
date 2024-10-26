@@ -18,11 +18,11 @@ const Accordion = () => {
           <div className='w-full px-5 lg:w-1/2'>
             <AccordionItem
               header='SUITCASES'
-              text1='Small up to 32 kg'
+              text1='Small up to 23 kg'
               price1={`$450`}
-              text2='Medium up to 32 kg'
+              text2='Medium up to 23 kg'
               price2={`$470`}
-              text3='Large up to 32 kg'
+              text3='Large up to 23 kg'
               price3={`$500`}
               // text4='King Mattress'
               // price4={`$200`}
