@@ -7,8 +7,8 @@ const Service3 = () => {
     <section className='pb-12 pt-10 dark:bg-dark lg:pb-[90px] lg:pt-10'>
       <div className='container mx-auto'>
         <div className='-mx-4 flex flex-wrap'>
-          <div className='w-full px-4'>
-            <div className='mx-auto mb-[60px] max-w-[510px] text-center'>
+          <div className='w-full px-4 pt-20'>
+            <div className='mx-auto mb-[60px] max-w-[800px] text-center'>
               <span className='mb-1 block lg:text-5xl font-semibold text-primary'>
                 Our Promise to Our customers:
               </span>
@@ -44,7 +44,7 @@ export default Service3;
 
 const ServiceCard = ({ icon, title, details }) => {
   return (
-    <div className='w-full px-4 sm:w-4/5 md:w-1/2 lg:w-1/3'>
+    <div className='w-full  px-4 sm:w-4/5 md:w-1/2 lg:w-1/3'>
       <div className='group relative mb-8 rounded-xl border border-gray-800 bg-base-200 p-10 text-center dark:border-dark-3 dark:bg-dark-2 md:px-8 lg:px-6 lg:py-9 xl:px-[43px] xl:py-[45px]'>
         <div className='relative z-10 mx-auto mb-10 inline-flex h-11 items-center text-red-500'>
           {icon}
