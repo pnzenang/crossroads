@@ -19,3 +19,4 @@ export { default as Stats } from '../pages/Stats';
 export { default as Admin } from '../pages/Admin';
 export { default as Profile } from '../pages/Profile';
 export { default as AllPackagesAdmin } from '../pages/AllPackagesAdmin';
+export { default as PickUp } from '../pages/PickUp';

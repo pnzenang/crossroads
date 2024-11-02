@@ -21,6 +21,7 @@ import {
   EditPackage,
   Stats,
   Profile,
+  PickUp,
 } from './pages';
 
 import { action as registerAction } from './pages/Register';
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
       {
         path: 'services',
         element: <Services />,
+      },
+      {
+        path: 'pick-up',
+        element: <PickUp />,
       },
 
       {

@@ -43,6 +43,7 @@ const Navbar = () => {
                     <ul className='block lg:flex'>
                       <ListItem NavLink='/'>Home</ListItem>
                       <ListItem NavLink='/services'>Our Services</ListItem>
+                      <ListItem NavLink='/pick-up'>Pick-up</ListItem>
                       <ListItem NavLink='/pricing'>Pricing</ListItem>
                       <ListItem NavLink='/contact'>Contact</ListItem>
                       <Link

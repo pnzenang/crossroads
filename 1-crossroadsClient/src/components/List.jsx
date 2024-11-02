@@ -20,10 +20,9 @@ const Services = () => {
           </div>
           <div className='flex  justify-center flex-1 p-6 bg-base-300 lg:w-1/2'>
             <h2 className=' text-base-content lg:text-xl'>
-              Packages travel in one of the see containers carry by the sea
-              vessels for a period of 6 to 8 weeks. At destination port we take
-              care of the customs and get your packages ready for pick up or
-              delivery if you so choose.
+              Packages travel in one of the see containers for a period of 6 to
+              8 weeks. At destination port we take care of the customs and get
+              your packages ready for pick up or delivery if you so choose.
               <br />
               <br />
               <span className='text-primary underline font-bold'>
@@ -37,7 +36,9 @@ const Services = () => {
               <br />
               <span className='font-extrabold'>
                 {' '}
-                Our pick-up and price schedules are listed below.
+                Our pick-up and price schedules are posted on this website,
+                choose your pickup date and time from the posted schedule for
+                your state.
               </span>
               <br />
               <br />
@@ -47,8 +48,8 @@ const Services = () => {
                 non-refundable once your package is picked-up.
                 <br />
                 <br />
-                We only send our drivers for pick-up when we receive the pick-up
-                fee
+                We only send our drivers for pick-up when we receive at least
+                the pick-up fee
                 <br />
                 <br />
               </span>

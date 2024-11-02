@@ -17,9 +17,7 @@ const Services = () => {
       <TypeOfServices />
       <List />
       <WayToBeginShipment />
-      <Calendar1 />
-      <Calendar2 id='type' />
-      <Calendar3 />
+
       <Cards />
     </section>
   );

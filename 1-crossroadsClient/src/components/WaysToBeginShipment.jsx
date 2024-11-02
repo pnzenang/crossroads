@@ -19,30 +19,30 @@ const Accordion2 = () => {
             <AccordionItem
               header='CREATE YOUR ACCOUNT ON THIS WEB APPLICATION.(BEST WAY)'
               text1='1-Create your account by clicking on login above and select the option register.'
-              text2='2-Add your package on your dashboard. You will see a package reference number that will alow you to receive all the updates on your package without needing to call anyone.'
-              text3='3-You can alert us through your dashboard that you  send us your pickup fee or your shipping fee (zelle is our preferred method as it is free for both of us).'
+              text2='2-Add your package to your dashboard. You will see a package reference number. Use it for any communication concerning the package.'
+              text3='3-You can alert us through your dashboard that you have sent your pickup fee or your shipping fee (zelle is our preferred method as it is free for both of us).'
               text4='4-You will also receive all the status updates on your package right there on your dashboard.'
             />
             <AccordionItem
               header='CALL CROSSROADS LOGISTICS TO DISCUSS THE SHIPMENT OF YOUR PACKAGE.'
-              text1='1-Our phone number is 443-531-5852, when us, you call we will register your package and discuss pick-up and shipping.'
-              text2='2-You will receive a shipping reference number that you will use every time we discuss your package.'
-              text3='3-You can alert us by call or by message that you  send us your pickup fee or your shipping fee (zelle is our preferred method as it is free for both of us).'
+              text1={`1-Our phone number is ${'(443)-531-5852'}, when you call us, we will register your package and discuss pick-up date and shipping fee.`}
+              text2='2-You will receive a shipping reference number that you will use when discussing your package.'
+              text3='3-You can alert us by call or by message when you  send us your pickup fee or your shipping fee (zelle is our preferred method as it is free for both of us).'
               text4='4-You will also receive all the status updates on your package by call or message.'
             />
             <AccordionItem
               header='SEND US A MESSAGE TO DISCUSS THE SHIPMENT OF YOUR PACKAGE.'
-              text1='1-Our phone number is 443-531-5852, when us, you call we will register your package and discuss pick-up and shipping.'
-              text2='2-You will receive a shipping reference number that you will use every time we discuss your package.'
-              text3='3-You can alert us by call or by message that you  send us your pickup fee or your shipping fee (zelle is our preferred method as it is free for both of us).'
+              text1={`1-Our phone number is ${'(443)-531-5852'}, when you call us, we will register your package and discuss pick-up date and shipping fee.`}
+              text2='2-You will receive a shipping reference number that you will use when discussing your package.'
+              text3='3-You can alert us by call or by message when you  send us your pickup fee or your shipping fee (zelle is our preferred method as it is free for both of us).'
               text4='4-You will also receive all the status updates on your package by call or message.'
             />
             <AccordionItem
               header='SEND US AN EMAIL  TO BEGIN YOUR SHIPMENT PROCESS.'
-              text1='1-take a picture of your package and send it through our email and we can start discussing the pickup.'
+              text1='1- Our email is info@crossroadsLogistics.org, take a picture of your package and send it through our email and we can start discussing the pickup.'
               text2='2-You will receive a shipping reference number that you will use every time we discuss your package.'
-              text3='3-You can alert us by call or by message that you  send us your pickup fee or your shipping fee (zelle is our preferred method as it is free for both of us).'
-              text4='4-You will also receive all the status updates on your package by call or message or email.'
+              text3='3-You can alert us by call, by message or by email  that you  send us your pickup fee or your pickup date and time. (zelle is our preferred method as it is free for both of us).'
+              text4='4-You will also receive all the status updates on your package by call, message or email.'
             />
           </div>
         </div>
