@@ -170,7 +170,7 @@ const Services = () => {
               src={central}
               // src='https://source.unsplash.com/640x480/?1'
               alt=''
-              className='h-full dark:bg-gray-500 aspect-video object-cover object-center '
+              className='sm:h-full dark:bg-gray-500 aspect-video object-cover object-center '
             />
           </div>
           <div className='flex  justify-center flex-1 p-6 bg-base-300 lg:w-1/2'>
