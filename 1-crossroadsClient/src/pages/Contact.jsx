@@ -2,8 +2,8 @@ import React from 'react';
 import contact from '../assets/Contact.jpg';
 const Contact = () => {
   return (
-    <section className='relative z-11 bg-primary py-20 lg:py-[120px] '>
-      <div className='container mx-auto'>
+    <section className='relative z-1 bg-primary py-20 lg:py-[120px] '>
+      <div className='container  mx-auto max-w-7xl '>
         <div className='text-base-content bg-base-300'>
           <div className='flex flex-wrap items-stretch'>
             <div className='w-full lg:w-7/12'>
@@ -17,13 +17,13 @@ const Contact = () => {
                   />
                 </div>
                 <div className='absolute grid justify-items-center my-10 md:my-36 mx-auto w-full  px-5 '>
-                  <div className='sm:w-2/6 flex-col  rounded text-base-content bg-base-300 px-4 py-9 shadow-[0px_4px_10px_0px_rgba(0,0,0,0.25)] dark:bg-dark-2 md:inline-flex md:px-4 lg:px-0 xl:px-4'>
+                  <div className='sm:w-3/6 flex-col  rounded text-base-content bg-base-300 px-4 py-9 shadow-[0px_4px_10px_0px_rgba(0,0,0,0.25)] dark:bg-dark-2 md:inline-flex md:px-4 lg:px-0 xl:px-4'>
                     <div className='mb-4 border-stroke px-3 border-primary md:mb-12 '>
                       <h5 className='text-lg font-semibold text-base-content bg-base-300'>
                         Email
                       </h5>
                       <p className='text-base-content bg-base-300'>
-                        info@example.com
+                        contact@crosslog.org
                       </p>
                     </div>
                     <div className='mb-4 border-stroke px-3 border-primary md:mb-12 '>
@@ -31,7 +31,7 @@ const Contact = () => {
                         Phone
                       </h5>
                       <p className='text-base text-body-color dark:text-dark-6'>
-                        +1(443)-531-5852
+                        +1(913)-999-5401
                       </p>
                     </div>
                     <div className='px-2 pt-6'>

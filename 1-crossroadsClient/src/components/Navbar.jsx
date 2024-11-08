@@ -55,7 +55,7 @@ const Navbar = () => {
                     </ul>
                   </nav>
                   <div className='lg:hidden items-center flex gap-x-5 justify-between  lg:pr-0 '>
-                    <div className='w-11 h-11  pl-10  rounded-xl hover:shadow-xl flex items-center justify-center hover:bg-base-100 '>
+                    <div className='w-11 h-11  pl-10  rounded-xl  flex items-center justify-center hover:bg-base-300 '>
                       <label className='swap swap-rotate text-primary'>
                         <input type='checkbox' onChange={handleTheme} />
                         {/* sun icon */}

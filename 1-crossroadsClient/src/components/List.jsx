@@ -37,8 +37,8 @@ const Services = () => {
               <span className='font-extrabold'>
                 {' '}
                 Our pick-up and price schedules are posted on this website,
-                choose your pickup date and time from the posted schedule for
-                your state.
+                choose your pickup date and time from your state's posted
+                schedule.
               </span>
               <br />
               <br />
@@ -49,7 +49,7 @@ const Services = () => {
                 <br />
                 <br />
                 We only send our drivers for pick-up when we receive at least
-                the pick-up fee
+                the pick-up fee.
                 <br />
                 <br />
               </span>
@@ -91,7 +91,9 @@ const Services = () => {
               <br />
               <span className='font-extrabold'>
                 {' '}
-                Our pick-up and price schedules below are listed below.
+                Our pick-up and price schedules are posted on this website,
+                choose your pickup date and time from your state's posted
+                schedule.
               </span>
               <br />
               <br />
@@ -101,8 +103,8 @@ const Services = () => {
                 non-refundable once your package is picked-up.
                 <br />
                 <br />
-                We only send our drivers for pick-up when we receive the pick-up
-                fee
+                We only send our drivers for pick-up when we receive at least
+                the pick-up fee.
                 <br />
                 <br />
               </span>
@@ -140,7 +142,9 @@ const Services = () => {
               <br />
               <span className='font-extrabold'>
                 {' '}
-                Our pick-up and price schedules below are listed below.
+                Our pick-up and price schedules are posted on this website,
+                choose your pickup date and time from your state's posted
+                schedule.
               </span>
               <br />
               <br />
@@ -150,8 +154,8 @@ const Services = () => {
                 non-refundable once your package is picked-up.
                 <br />
                 <br />
-                We only send our drivers for pick-up when we receive the pick-up
-                fee
+                We only send our drivers for pick-up when we receive at least
+                the pick-up fee.
                 <br />
                 <br />
               </span>

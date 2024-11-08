@@ -9,9 +9,9 @@ import ScrollToTop from 'react-scroll-to-top';
 import pricing from '../assets/pricing.jpg';
 const Pricing = () => {
   return (
-    <>
+    <section className='py-20'>
       <ScrollToTop smooth color='#0891b2' width='40' />
-      <h1 className='pt-28 lg:text-5xl font-extrabold'>OUR PRICING</h1>
+      <h1 className='pt-10 lg:text-5xl font-extrabold'>OUR PRICING</h1>
       <div className='my-10 bg-base-300 rounded-lg '>
         <div className='h-80 rounded-lg '>
           <img
@@ -44,7 +44,7 @@ const Pricing = () => {
       <SeaContainerPrices />
       <AirRegularPrices />
       <AirExpressPrices />
-    </>
+    </section>
   );
 };
 export default Pricing;
