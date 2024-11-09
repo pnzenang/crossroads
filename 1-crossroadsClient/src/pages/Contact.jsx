@@ -39,9 +39,9 @@ const Contact = () => {
                         Address
                       </h5>
                       <p className='text-base text-body-color dark:text-dark-6'>
-                        23612 Public House Rd
+                        9157 Whiskey Bottom Rd
                         <br />
-                        Clarksburg MD 20871
+                        Laurel MD 20723
                       </p>
                     </div>
                   </div>
