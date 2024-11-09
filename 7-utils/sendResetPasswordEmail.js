@@ -11,8 +11,8 @@ export const sendResetPasswordEmail = async ({
 
   return sendEmail({
     to: userEmail,
-    from: 'info@crosslogis.org',
+    from: 'contact@crosslog.org',
     subject: 'Reset Password',
-    html: `<h3>Hello, ${name}</h3>${message}`,
+    html: `<h3>Hello ${name},</h3> ${message}`,
   });
 };

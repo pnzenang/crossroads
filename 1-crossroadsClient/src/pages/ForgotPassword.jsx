@@ -9,7 +9,9 @@ export const action = async ({ request }) => {
 
   try {
     await customFetch.post('/auth/forgotPassword', data);
-    toast.success('Please check your email for reset password link');
+    toast.success(
+      `Please check your email for reset password link, you should receive a email from "contact"`
+    );
     return redirect('/');
   } catch (error) {
     toast.error(error?.response?.data?.msg);
