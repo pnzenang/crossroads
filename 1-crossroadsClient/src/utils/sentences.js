@@ -9,10 +9,10 @@ let associations = [
     name: `The best way to send packages through Crossroads is to create an account on our web application and start your package on your dashboard.`,
   },
   {
-    name: `Our phone number is (913)-999-5401 and our email is contact@crosslog.org, contact us to start discussing your package.`,
+    name: `Our phone number is (913)-999-5401 and our email is contact@crossshipping.org, contact us to start discussing your package.`,
   },
   {
-    name: `Take a picture of your package, send it by message with the package reference number to receive accurate shipping fee  .`,
+    name: `Take a picture of your package, send it by message with the package reference number to receive accurate shipping fee .`,
   },
 
   {

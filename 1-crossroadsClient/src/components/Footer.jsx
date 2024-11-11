@@ -36,7 +36,7 @@ const Footer2 = () => {
                     How Can We Help?
                   </h5>
                   <p className='mb-2 text-base text-body-color dark:text-dark-6'>
-                    contact@crosslog.org
+                    contact@crossshipping.org
                   </p>
                 </div>
               </div>

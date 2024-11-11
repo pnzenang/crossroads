@@ -26,10 +26,10 @@ const Pricing = () => {
               {' '}
               very competitive shipping prices
             </span>
-            , each price include a $25 pickup price that will deducted from the
-            final shipping price. that $25 should be received before we mobilize
-            our driver. Our prefer method of payment is by zelle as our driver
-            do not carry cash.
+            , each price includes a $25 pickup fee that will be deducted from
+            the final shipping price. that $25 should be received before we
+            mobilize our driver. Our preferred method of payment is zelle as our
+            driver do not carry cash.
             <br />
             The list is not exhaustive, your package may not appear in our list
             but we stand ready to give you an estimate of you shipping price if
