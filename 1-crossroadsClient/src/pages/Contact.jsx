@@ -23,7 +23,7 @@ const Contact = () => {
                         Email
                       </h5>
                       <p className='text-base-content bg-base-300'>
-                        contact@crosslog.org
+                        contact@crossshipping.org
                       </p>
                     </div>
                     <div className='mb-4 border-stroke px-3 border-primary md:mb-12 '>
