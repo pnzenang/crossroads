@@ -46,7 +46,7 @@ const ServiceCard = ({ icon, title, details }) => {
   return (
     <div className='w-full  px-4 sm:w-4/5 md:w-1/2 lg:w-1/3'>
       <div className='group relative mb-8 rounded-xl border border-gray-800 bg-base-200 p-10 text-center dark:border-dark-3 dark:bg-dark-2 md:px-8 lg:px-6 lg:py-9 xl:px-[43px] xl:py-[45px]'>
-        <div className='relative z-10 mx-auto mb-10 inline-flex h-11 items-center text-red-500'>
+        <div className='relative z-1 mx-auto mb-10 inline-flex h-11 items-center text-red-500'>
           {icon}
         </div>
         <h4 className='mb-[14px] text-2xl font-bold text-gray'>{title}</h4>
