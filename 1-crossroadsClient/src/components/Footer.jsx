@@ -48,10 +48,10 @@ const Footer2 = () => {
                 <FaLocationDot className='w-7 h-7 mx-2' />
                 <div>
                   <h5 className='mb-4 text-lg font-semibold text-dark dark:text-white'>
-                    Our Warehouse
+                    Warehouses in
                   </h5>
                   <p className='text-base text-body-color dark:text-dark-6'>
-                    9157 Whiskey Bottom Rd <br /> Laurel MD 20723
+                    Georgia <br /> Maryland
                   </p>
                 </div>
               </div>
