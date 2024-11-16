@@ -17,6 +17,7 @@ const TdStyle = {
   ThStyle: `w-1/6 min-w-[160px] border-l border-transparent py-4 pl-3 text-[15px] font-bold text-white lg:py-7 lg:px-4`,
   TdStyle: `text-dark border-b  border-primary bg-base-100  py-5 pl-12 text-left text-[15px]  font-medium uppercase`,
   TdStyle2: `text-dark border-b border-primary bg-base-100  py-5 pl-12 text-left text-[15px] font-medium uppercase`,
+  lineStyle: `text-dark    py-5 pl-12 text-left text-[10px] font-medium  lowercase`,
 };
 
 const PackagesContainer = () => {
@@ -86,10 +87,12 @@ const PackagesContainer = () => {
                     <table className='w-full  table table-zebra'>
                       <thead className='text-center bg-primary'>
                         <tr>
-                          <th className={TdStyle.ThStyle}> Reference Number</th>
+                          <th className={TdStyle.ThStyle}> Reference Code</th>
                           <th className={TdStyle.ThStyle}> State of Origin </th>
                           <th className={TdStyle.ThStyle}>Destination</th>
-                          <th className={TdStyle.ThStyle}>Shipping Price </th>
+                          <th className={TdStyle.ThStyle}>
+                            Pickup Fee(or shipping price){' '}
+                          </th>
                           <th className={TdStyle.ThStyle}>Sender Commitment</th>
                           <th className={TdStyle.ThStyle}> Pickup Date </th>
                           <th className={TdStyle.ThStyle}> Package Status </th>
@@ -136,7 +139,18 @@ const PackagesContainer = () => {
                                 {destinationCountry}
                               </td>
                               <td className={TdStyle.TdStyle}>
-                                {numberFormat(shippingPrice)}
+                                {shippingPrice === 25 ? (
+                                  <span className='sm:  flex '>
+                                    Pickup fee:
+                                  </span>
+                                ) : (
+                                  <span className='sm:w-1/2   '>
+                                    Total Shipping Price:
+                                  </span>
+                                )}
+                                <span className='px-2 sm:w-1/2  rounded-sm font-bold '>
+                                  {numberFormat(shippingPrice)}
+                                </span>
                               </td>
                               {/* <td className={TdStyle.TdStyle2}>{date}</td> */}
 

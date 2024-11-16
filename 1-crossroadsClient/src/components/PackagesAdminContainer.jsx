@@ -95,10 +95,12 @@ const PackagesAdminContainer = () => {
                     <table className='w-full  table table-zebra'>
                       <thead className='text-center bg-primary'>
                         <tr>
-                          <th className={TdStyle.ThStyle}> Reference Number</th>
+                          <th className={TdStyle.ThStyle}> Reference Code</th>
                           <th className={TdStyle.ThStyle}> State of Origin </th>
                           <th className={TdStyle.ThStyle}>Destination</th>
-                          <th className={TdStyle.ThStyle}>Shipping Price </th>
+                          <th className={TdStyle.ThStyle}>
+                            Pickup Fee(or shipping price){' '}
+                          </th>
                           <th className={TdStyle.ThStyle}>Sender Commitment</th>
                           <th className={TdStyle.ThStyle}> Pickup Date </th>
                           <th className={TdStyle.ThStyle}> Package Status </th>
@@ -144,7 +146,18 @@ const PackagesAdminContainer = () => {
                                 {destinationCountry}
                               </td>
                               <td className={TdStyle.TdStyle}>
-                                {numberFormat(shippingPrice)}
+                                {shippingPrice === 25 ? (
+                                  <span className='sm:  flex '>
+                                    Pickup fee:
+                                  </span>
+                                ) : (
+                                  <span className='sm:w-1/2   '>
+                                    Total Shipping Price:
+                                  </span>
+                                )}
+                                <span className='px-2 sm:w-1/2  rounded-sm font-bold '>
+                                  {numberFormat(shippingPrice)}
+                                </span>
                               </td>
                               {/* <td className={TdStyle.TdStyle2}>{date}</td> */}
 

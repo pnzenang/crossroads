@@ -8,6 +8,17 @@ const NavLinks2SM = () => {
     <div className='nav-links pt-20'>
       {links2.map((link) => {
         const { text, path, icon } = link;
+        const { userRole } = user;
+        {
+          if (
+            userRole === 'user' &&
+            (path === 'admin' ||
+              path === 'all-packages-admin' ||
+              // path === 'all-deceased-admin' ||
+              path === 'register')
+          )
+            return;
+        }
         return (
           <NavLink
             to={path}

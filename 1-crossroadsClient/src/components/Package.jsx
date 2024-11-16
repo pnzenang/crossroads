@@ -185,8 +185,8 @@ const Package = ({
                   </h2>
                 </div>
                 <div className='sm:flex  pt-1 grid grid-cols-2'>
-                  {shippingPrice === 100 ? (
-                    <h2 className='sm:w-1/2 flex  '>Pickup Price:</h2>
+                  {shippingPrice === 25 ? (
+                    <h2 className='sm:w-1/2 flex  '>Pickup fee:</h2>
                   ) : (
                     <h2 className='sm:w-1/2 flex  '>
                       Total Shipping Price including pickup price:

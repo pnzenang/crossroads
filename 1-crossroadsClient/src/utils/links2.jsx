@@ -32,10 +32,10 @@ const links2 = [
     path: 'all-packages-admin',
     icon: <MdDataArray />,
   },
-  {
-    text: 'admin',
-    path: 'admin',
-    icon: <BsDatabaseGear />,
-  },
+  // {
+  //   text: 'admin',
+  //   path: 'admin',
+  //   icon: <BsDatabaseGear />,
+  // },
 ];
 export default links2;

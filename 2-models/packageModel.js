@@ -56,7 +56,7 @@ const PackageSchema = new mongoose.Schema(
       default: PACKAGE_STATUS.WAITING,
     },
     additionalInformation: String,
-    shippingPrice: { type: Number, default: 100 },
+    shippingPrice: { type: Number, default: 25 },
     pickupDate: Date,
     createdBy: {
       type: mongoose.Types.ObjectId,
