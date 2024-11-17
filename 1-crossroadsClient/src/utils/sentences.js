@@ -22,7 +22,7 @@ let associations = [
     name: ` Please follow the schedule posted on our website, we may adjust the pickup time, but we should stay withing the days alloted for your region and your state.`,
   },
   {
-    name: ` Creating your package will come with the pickup fee, but we need the picture of your package to set up the shipping price.`,
+    name: ` Creating your package will come with the pickup fee, but we need the picture of your package to set an accurate shipping price.`,
   },
   {
     name: ` Your package will be shipped from our warehouses only when we receive your full shipping price even if we will it pick up after the payment of the pickup fee.`,
