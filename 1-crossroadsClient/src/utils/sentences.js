@@ -25,7 +25,7 @@ let associations = [
     name: ` Creating your package will come with the pickup fee, but we need the picture of your package to set up the shipping price.`,
   },
   {
-    name: ` Your package will be shipped from our warehouses only when we receive your full shipping price even if we can pick up after the payment of the pickup fee.`,
+    name: ` Your package will be shipped from our warehouses only when we receive your full shipping price even if we will it pick up after the payment of the pickup fee.`,
   },
 ];
 
