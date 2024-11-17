@@ -12,7 +12,7 @@ let associations = [
     name: `Our phone number is (913)-999-5401 and our email is contact@crossshipping.org, contact us to start discussing your package.`,
   },
   {
-    name: `Take a picture of your package, send it by message with the package reference number to receive accurate shipping fee.`,
+    name: `Take a picture of your package, send it by message with the package reference code to receive accurate shipping fee.`,
   },
 
   {
@@ -21,5 +21,12 @@ let associations = [
   {
     name: ` Please follow the schedule posted on our website, we may adjust the pickup time, but we should stay withing the days alloted for your region and your state.`,
   },
+  {
+    name: ` Creating your package will come with the pickup fee, but we need the picture of your package to set up the shipping price.`,
+  },
+  {
+    name: ` Your package will be shipped from our warehouses only when we receive your full shipping price even if we can pick up after the payment of the pickup fee.`,
+  },
 ];
+
 export default associations;
