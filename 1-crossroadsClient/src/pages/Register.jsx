@@ -48,10 +48,10 @@ const Register = () => {
         <Logo />
         <h4 className='text-center text-3xl font-bold mt-4'>Register</h4>
         <div className='grid lg:grid-cols-2 gap-4 '>
-          <FormInput type='text' label=' first names' name='userFirstName' />
+          <FormInput type='text' label=' first name' name='userFirstName' />
           <FormInput
             type='text'
-            label='middle and last names'
+            label='last and middle names'
             name='userMiddleAndLastName'
           />
         </div>
