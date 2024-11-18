@@ -55,7 +55,7 @@ function Banner() {
         {sentences.map((sentence) => {
           return (
             <div key={sentence.name.length} className=''>
-              <h2 className='text-[10px] font-bold sm:text-xl my-10 mx-5 p-2 border-secondary border-4 bg-indigo-600  rounded-lg min-h-20'>
+              <h2 className='text-[13px] font-bold sm:text-xl my-10 mx-5 p-2 border-secondary border-4 bg-indigo-600  rounded-lg min-h-20'>
                 {sentence.name}
               </h2>
             </div>
