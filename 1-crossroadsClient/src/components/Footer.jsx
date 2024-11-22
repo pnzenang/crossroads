@@ -51,7 +51,7 @@ const Footer2 = () => {
                     Warehouses in
                   </h5>
                   <p className='text-base text-body-color dark:text-dark-6'>
-                    Georgia <br /> Maryland
+                    Georgia and Maryland
                   </p>
                 </div>
               </div>
