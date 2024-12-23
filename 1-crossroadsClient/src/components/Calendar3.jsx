@@ -9,7 +9,7 @@ const Calendar = () => {
         <div className='mx-auto px-4 lg:container'>
           <div className='mb-[30px] flex items-center justify-between rounded-lg border border-stroke bg-gray-2 py-3 pl-[30px] pr-4 border-base-content bg-base-300'>
             <h1 className='text-base font-semibold text-primary sm:text-3xl'>
-              January 2025 Pick-up schedule.
+              March 2025 Pick-up schedule.
             </h1>
           </div>
           <div className='w-full max-w-full overflow-x-auto bg-base-300'>
@@ -47,181 +47,181 @@ const Calendar = () => {
                     bgColor={colors[0].bgColor}
                   />
                   <Day
-                    number='01'
-                    active
+                    // number='01'
+                    // active
                     eventTitle1={regions[1].region}
                     eventDate={times[1].time}
-                    bgColor={colors[1].bgColor}
+                    bgColor={colors[0].bgColor}
                   />
+                  <Day
+                    // number='02'
+                    // active
+                    eventTitle1={regions[1].region}
+                    eventDate={times[1].time}
+                    bgColor={colors[0].bgColor}
+                  />
+                  <Day
+                    // number='03'
+                    // active
+                    eventTitle1={regions[2].region}
+                    eventDate={times[1].time}
+                    bgColor={colors[0].bgColor}
+                  />
+                  <Day
+                    number='01'
+                    active
+                    eventTitle1={regions[2].region}
+                    eventDate={times[0].time}
+                    bgColor={colors[3].bgColor}
+                  />
+                </DayRow>
+                <DayRow>
                   <Day
                     number='02'
                     active
-                    eventTitle1={regions[1].region}
-                    eventDate={times[1].time}
-                    bgColor={colors[1].bgColor}
+                    eventTitle1={regions[2].region}
+                    eventDate={times[0].time}
+                    bgColor={colors[3].bgColor}
                   />
                   <Day
                     number='03'
-                    active
-                    eventTitle1={regions[2].region}
+                    // active
+                    eventTitle1={regions[1].region}
                     eventDate={times[1].time}
-                    bgColor={colors[3].bgColor}
+                    bgColor={colors[0].bgColor}
                   />
                   <Day
                     number='04'
                     active
-                    eventTitle1={regions[2].region}
-                    eventDate={times[0].time}
-                    bgColor={colors[3].bgColor}
+                    eventTitle1={regions[1].region}
+                    eventDate={times[1].time}
+                    bgColor={colors[1].bgColor}
                   />
-                </DayRow>
-                <DayRow>
                   <Day
                     number='05'
                     active
-                    eventTitle1={regions[2].region}
-                    eventDate={times[0].time}
-                    bgColor={colors[3].bgColor}
+                    eventTitle1={regions[1].region}
+                    eventDate={times[1].time}
+                    bgColor={colors[1].bgColor}
                   />
                   <Day
                     number='06'
-                    // active
+                    active
                     eventTitle1={regions[1].region}
                     eventDate={times[1].time}
-                    bgColor={colors[0].bgColor}
+                    bgColor={colors[1].bgColor}
                   />
                   <Day
                     number='07'
                     active
-                    eventTitle1={regions[1].region}
+                    eventTitle1={regions[3].region}
                     eventDate={times[1].time}
-                    bgColor={colors[1].bgColor}
+                    bgColor={colors[2].bgColor}
                   />
                   <Day
                     number='08'
                     active
-                    eventTitle1={regions[1].region}
-                    eventDate={times[1].time}
-                    bgColor={colors[1].bgColor}
+                    eventTitle1={regions[3].region}
+                    eventDate={times[0].time}
+                    bgColor={colors[2].bgColor}
                   />
+                </DayRow>
+                <DayRow>
                   <Day
                     number='09'
                     active
-                    eventTitle1={regions[1].region}
-                    eventDate={times[1].time}
-                    bgColor={colors[1].bgColor}
+                    eventTitle1={regions[3].region}
+                    eventDate={times[0].time}
+                    bgColor={colors[2].bgColor}
                   />
                   <Day
                     number='10'
-                    active
-                    eventTitle1={regions[3].region}
+                    // active
+                    eventTitle1={regions[1].region}
                     eventDate={times[1].time}
-                    bgColor={colors[2].bgColor}
+                    bgColor={colors[0].bgColor}
                   />
                   <Day
                     number='11'
                     active
-                    eventTitle1={regions[3].region}
-                    eventDate={times[0].time}
-                    bgColor={colors[2].bgColor}
+                    eventTitle1={regions[1].region}
+                    eventDate={times[1].time}
+                    bgColor={colors[1].bgColor}
                   />
-                </DayRow>
-                <DayRow>
                   <Day
                     number='12'
                     active
-                    eventTitle1={regions[3].region}
-                    eventDate={times[0].time}
-                    bgColor={colors[2].bgColor}
+                    eventTitle1={regions[1].region}
+                    eventDate={times[1].time}
+                    bgColor={colors[1].bgColor}
                   />
                   <Day
                     number='13'
-                    // active
+                    active
                     eventTitle1={regions[1].region}
                     eventDate={times[1].time}
-                    bgColor={colors[0].bgColor}
+                    bgColor={colors[1].bgColor}
                   />
                   <Day
                     number='14'
                     active
-                    eventTitle1={regions[1].region}
+                    eventTitle1={regions[2].region}
                     eventDate={times[1].time}
-                    bgColor={colors[1].bgColor}
+                    bgColor={colors[3].bgColor}
                   />
                   <Day
                     number='15'
                     active
-                    eventTitle1={regions[1].region}
-                    eventDate={times[1].time}
-                    bgColor={colors[1].bgColor}
+                    eventTitle1={regions[2].region}
+                    eventDate={times[0].time}
+                    bgColor={colors[3].bgColor}
                   />
+                </DayRow>
+                <DayRow>
                   <Day
                     number='16'
                     active
-                    eventTitle1={regions[1].region}
-                    eventDate={times[1].time}
-                    bgColor={colors[1].bgColor}
+                    eventTitle1={regions[2].region}
+                    eventDate={times[0].time}
+                    bgColor={colors[3].bgColor}
                   />
                   <Day
                     number='17'
-                    active
-                    eventTitle1={regions[2].region}
+                    // active
+                    eventTitle1={regions[1].region}
                     eventDate={times[1].time}
-                    bgColor={colors[3].bgColor}
+                    bgColor={colors[0].bgColor}
                   />
                   <Day
                     number='18'
                     active
-                    eventTitle1={regions[2].region}
-                    eventDate={times[0].time}
-                    bgColor={colors[3].bgColor}
+                    eventTitle1={regions[1].region}
+                    eventDate={times[1].time}
+                    bgColor={colors[1].bgColor}
                   />
-                </DayRow>
-                <DayRow>
                   <Day
                     number='19'
                     active
-                    eventTitle1={regions[2].region}
-                    eventDate={times[0].time}
-                    bgColor={colors[3].bgColor}
+                    eventTitle1={regions[1].region}
+                    eventDate={times[1].time}
+                    bgColor={colors[1].bgColor}
                   />
                   <Day
                     number='20'
-                    // active
+                    active
                     eventTitle1={regions[1].region}
                     eventDate={times[1].time}
-                    bgColor={colors[0].bgColor}
+                    bgColor={colors[1].bgColor}
                   />
                   <Day
                     number='21'
                     active
-                    eventTitle1={regions[1].region}
-                    eventDate={times[1].time}
-                    bgColor={colors[1].bgColor}
-                  />
-                  <Day
-                    number='22'
-                    active
-                    eventTitle1={regions[1].region}
-                    eventDate={times[1].time}
-                    bgColor={colors[1].bgColor}
-                  />
-                  <Day
-                    number='23'
-                    active
-                    eventTitle1={regions[1].region}
-                    eventDate={times[1].time}
-                    bgColor={colors[1].bgColor}
-                  />
-                  <Day
-                    number='24'
-                    active
                     eventTitle1={regions[3].region}
                     eventDate={times[1].time}
                     bgColor={colors[2].bgColor}
                   />
                   <Day
-                    number='25'
+                    number='22'
                     active
                     eventTitle1={regions[3].region}
                     eventDate={times[0].time}
@@ -230,54 +230,105 @@ const Calendar = () => {
                 </DayRow>
                 <DayRow>
                   <Day
-                    number='26'
+                    number='23'
                     active
                     eventTitle1={regions[3].region}
                     eventDate={times[0].time}
                     bgColor={colors[2].bgColor}
                   />
                   <Day
-                    number='27'
+                    number='24'
                     // active
                     eventTitle1={regions[1].region}
                     eventDate={times[1].time}
                     bgColor={colors[0].bgColor}
                   />
                   <Day
+                    number='25'
+                    active
+                    eventTitle1={regions[1].region}
+                    eventDate={times[1].time}
+                    bgColor={colors[1].bgColor}
+                  />
+                  <Day
+                    number='26'
+                    active
+                    eventTitle1={regions[1].region}
+                    eventDate={times[1].time}
+                    bgColor={colors[1].bgColor}
+                  />
+                  <Day
+                    number='27'
+                    active
+                    eventTitle1={regions[1].region}
+                    eventDate={times[1].time}
+                    bgColor={colors[1].bgColor}
+                  />
+                  <Day
                     number='28'
-                    active
-                    eventTitle1={regions[1].region}
-                    eventDate={times[1].time}
-                    bgColor={colors[1].bgColor}
-                  />
-                  <Day
-                    number='29'
-                    active
-                    eventTitle1={regions[1].region}
-                    eventDate={times[1].time}
-                    bgColor={colors[1].bgColor}
-                  />
-                  <Day
-                    number='30'
-                    active
-                    eventTitle1={regions[1].region}
-                    eventDate={times[1].time}
-                    bgColor={colors[1].bgColor}
-                  />
-                  <Day
-                    number='31'
                     active
                     eventTitle1={regions[2].region}
                     eventDate={times[1].time}
                     bgColor={colors[3].bgColor}
                   />
                   <Day
-                    // number=''
+                    number='29'
+                    active
+                    eventTitle1={regions[2].region}
+                    eventDate={times[0].time}
+                    bgColor={colors[3].bgColor}
+                  />
+                </DayRow>
+                <DayRow>
+                  <Day
+                    number='30'
+                    active
+                    eventTitle1={regions[2].region}
+                    eventDate={times[0].time}
+                    bgColor={colors[3].bgColor}
+                  />
+                  <Day
+                    number='31'
                     // active
                     eventTitle1={regions[1].region}
                     eventDate={times[1].time}
                     bgColor={colors[0].bgColor}
                   />
+                  {/* <Day
+                    number='25'
+                    active
+                    eventTitle1={regions[1].region}
+                    eventDate={times[1].time}
+                    bgColor={colors[1].bgColor}
+                  />
+                  <Day
+                    number='26'
+                    active
+                    eventTitle1={regions[1].region}
+                    eventDate={times[1].time}
+                    bgColor={colors[1].bgColor}
+                  />
+                  <Day
+                    number='27'
+                    active
+                    eventTitle1={regions[1].region}
+                    eventDate={times[1].time}
+                    bgColor={colors[1].bgColor}
+                  />
+                  <Day
+                    number='28'
+                    active
+                    eventTitle1={regions[2].region}
+                    eventDate={times[1].time}
+                    bgColor={colors[3].bgColor}
+                  />
+                  <Day
+                    number='29'
+                    active
+                    eventTitle1={regions[2].region}
+                    eventDate={times[1].time}
+                    bgColor={colors[3].bgColor}
+                  /> */}
                 </DayRow>
               </tbody>
             </table>
